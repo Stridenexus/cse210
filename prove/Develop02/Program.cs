@@ -1,9 +1,15 @@
 using System;
+using static System.Console;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop02 World!");
+        PromptGenerator prompt = new PromptGenerator();
+        string promptResult = prompt.GetRandomPrompt();
+        WriteLine(promptResult);
+
+        Entry entry = new Entry();
+        entry.Display();
     }
 }
