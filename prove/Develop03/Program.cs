@@ -1,15 +1,38 @@
 using System;
+using static System.Console;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
-        Word word = new Word("Behold");
-        Console.WriteLine(word.GetWord());
-        Console.WriteLine(word.IsHidden());
-        word.Hide();
-        Console.WriteLine(word.IsHidden());
-        Console.WriteLine(word.GetWord());
+        bool quit = false;
+
+        Reference reference = new Reference("Revelation",21,6,7);
+        Scripture scripture = new Scripture();
+        reference.GetReference();
+        WriteLine(scripture.GetScriptureDisplay());
+
+        do
+        {
+            
+            Write("Press q to quit: ");
+            char c = char.Parse(ReadLine());
+
+            if (c == 'q')
+            {
+                quit = true;
+            }
+            else
+            {
+                quit = false;
+            }
+
+            Clear();
+
+            reference.GetReference();
+            scripture.GetNumber();
+            WriteLine(scripture.GetScriptureDisplay());
+        }
+        while (!quit);
     }
 }
