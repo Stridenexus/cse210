@@ -1,29 +1,15 @@
+// a parent class called Person
 public class Person
 {
-    private string _title;
-    private string _firstName;
-    private string _lastName;
+    private string _name;
 
-    public Person()
+    public Person(string name)
     {
-        _title = "";
-        _firstName = "Anonymous";
-        _lastName = "Unknown";
+        _name = name;
     }
 
-    public Person(string first, string last)
+    public string GetName()
     {
-        _title = "";
-        _firstName = first;
-        _lastName = last;
+        return _name;
     }
-
-    public Person(string title, string first, string last)
-    {
-        _title = title;
-        _firstName = first;
-        _lastName = last;
-    }
-    // ...
-
 }
