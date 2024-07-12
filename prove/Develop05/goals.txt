@@ -1,0 +1,3 @@
+SimpleGoal:|cure cancer|become best doctor and cure cancer|900|1
+EternalGoal:|Seek Jesus|Be like Him|10|3
+ChecklistGoal:|Foundation 4|win the semester|50|4|4
